@@ -1,0 +1,93 @@
+tailwind.config = {
+    darkMode: "class",
+    theme: {
+        extend: {
+            colors: {
+                "on-primary": "#640c10",
+                "surface-bright": "#433635",
+                background: "#1b1110",
+                "tertiary-container": "#004752",
+                "on-secondary-fixed": "#350f0d",
+                "on-surface": "#f2dedc",
+                primary: "#ffb3ae",
+                "on-secondary-fixed-variant": "#6a3936",
+                "surface-tint": "#ffb3ae",
+                "surface-container-lowest": "#150c0b",
+                surface: "#1b1110",
+                "secondary-fixed-dim": "#fbb5b0",
+                "inverse-primary": "#a33c39",
+                "secondary-fixed": "#ffdad7",
+                "on-error": "#690005",
+                "tertiary-fixed-dim": "#98cfdc",
+                "primary-fixed": "#ffdad7",
+                "surface-container-high": "#332726",
+                outline: "#a58b88",
+                "primary-fixed-dim": "#ffb3ae",
+                error: "#ffb4ab",
+                "inverse-surface": "#f2dedc",
+                "inverse-on-surface": "#3a2e2d",
+                "tertiary-fixed": "#b4ecf9",
+                "on-tertiary-container": "#7eb4c1",
+                "error-container": "#93000a",
+                "surface-container-low": "#231918",
+                "on-background": "#f2dedc",
+                "outline-variant": "#564240",
+                "on-tertiary-fixed": "#001f25",
+                "on-tertiary-fixed-variant": "#0d4e59",
+                "on-primary-container": "#ff8b84",
+                "surface-container": "#281d1c",
+                "on-tertiary": "#00363f",
+                secondary: "#fbb5b0",
+                "on-error-container": "#ffdad6",
+                "surface-dim": "#1b1110",
+                "on-secondary": "#4f2321",
+                "surface-container-highest": "#3e3231",
+                "on-surface-variant": "#ddc0bd",
+                tertiary: "#98cfdc",
+                "secondary-container": "#6d3b38",
+                "on-primary-fixed-variant": "#832524",
+                "surface-variant": "#3e3231",
+                "on-secondary-container": "#eba7a2",
+                "on-primary-fixed": "#410004",
+                "primary-container": "#7a1e1e"
+            },
+            borderRadius: {
+                DEFAULT: "0.25rem",
+                lg: "0.5rem",
+                xl: "0.75rem",
+                full: "9999px"
+            },
+            spacing: {
+                gutter: "24px",
+                unit: "4px",
+                "margin-mobile": "20px",
+                "margin-desktop": "64px",
+                "max-width": "1200px"
+            },
+            fontFamily: {
+                "headline-md": ["JetBrains Mono"],
+                "headline-xl": ["JetBrains Mono"],
+                "body-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "label-sm": ["JetBrains Mono"],
+                "headline-lg": ["JetBrains Mono"],
+                "headline-xl-mobile": ["JetBrains Mono"],
+                "label-md": ["JetBrains Mono"],
+                headline: ["Jetbrains Mono"],
+                display: ["Jetbrains Mono"],
+                body: ["Inter"],
+                label: ["Jetbrains Mono"]
+            },
+            fontSize: {
+                "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+                "headline-xl": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "700" }],
+                "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+                "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+                "label-sm": ["12px", { lineHeight: "1.4", fontWeight: "400" }],
+                "headline-lg": ["32px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "600" }],
+                "headline-xl-mobile": ["32px", { lineHeight: "1.2", fontWeight: "700" }],
+                "label-md": ["14px", { lineHeight: "1.4", fontWeight: "500" }]
+            }
+        }
+    }
+};
