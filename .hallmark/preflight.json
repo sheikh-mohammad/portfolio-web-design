@@ -1,0 +1,11 @@
+{
+  "scanned": "2026-08-03",
+  "framework": "vanilla HTML/CSS/JS (Firebase hosting, public/)",
+  "fontStack": ["Quicksand", "Source Serif 4"],
+  "palette": "warm earth CSS custom properties (style.css :root + [data-theme])",
+  "motion": "vanilla JS — IntersectionObserver, custom cursor, typewriter",
+  "spacing": "ad-hoc px values",
+  "designMd": false,
+  "hallmarkLog": false,
+  "note": "First Hallmark run. Full visual rebuild: tokens, macrostructure, typography, microinteraction discipline."
+}

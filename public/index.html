@@ -1,807 +1,392 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sheikh Mohammad Ahmed | Web Developer & AI Builder</title>
-  <meta name="description" content="Portfolio of Sheikh Mohammad Ahmed — Web Developer & AI Builder, Co-Founder @ Aplinode, Hackathon Winner" />
+  <title>Sheikh Mohammad Ahmed — AI Engineer & Founder</title>
+  <meta name="description" content="Sheikh Mohammad Ahmed — Co-founder of Aplinode, full-stack AI engineer, two-time hackathon winner. I turn half-formed ideas into shipped software clients pay for." />
+  <meta property="og:title" content="Sheikh Mohammad Ahmed — AI Engineer & Founder" />
+  <meta property="og:description" content="Co-founder of Aplinode. I build AI products that make money." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-  <!-- ===== PRELOADER ===== -->
-  <div class="preloader" id="preloader">
-    <div class="loader"></div>
-  </div>
-
-  <!-- ===== CURSOR ===== -->
-  <div class="cursor-dot" id="cursorDot"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-text">&lt;SM /&gt;</span>
-      </a>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link active">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <div class="nav-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="fas fa-sun sun-icon"></i>
-          <i class="fas fa-moon moon-icon"></i>
+  <!-- ===== MASTHEAD / NAV ===== -->
+  <header class="masthead" id="masthead">
+    <p class="masthead__issue">
+      <span>Sheikh Mohammad Ahmed</span>
+      <span class="masthead__dot" aria-hidden="true"></span>
+      <span>Karachi, PK</span>
+      <span class="masthead__dot" aria-hidden="true"></span>
+      <span>Open for Q3&nbsp;2026</span>
+    </p>
+    <div class="masthead__bar">
+      <a href="#top" class="wordmark" aria-label="Back to top">Sheikh&nbsp;Mohammad&nbsp;Ahmed</a>
+      <div class="masthead__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <span class="theme-toggle__label" data-on="light">Day</span>
+          <span class="theme-toggle__label" data-on="dark">Night</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Menu">
-          <span></span><span></span><span></span>
+        <a href="mailto:sheikhmohammadahmed07@gmail.com" class="btn btn--ghost">Start a project</a>
+        <button class="masthead__menu" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="mastNav">
+          <span></span><span></span>
         </button>
       </div>
     </div>
-  </nav>
+    <nav class="masthead__nav" id="mastNav">
+      <a href="#about" class="masthead__link">About</a>
+      <a href="#work" class="masthead__link">Work</a>
+      <a href="#capabilities" class="masthead__link">Capabilities</a>
+      <a href="#roles" class="masthead__link">Roles</a>
+      <a href="#contact" class="masthead__link">Contact</a>
+    </nav>
+  </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero" id="home">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-gradient-orb"></div>
-    <div class="container hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">Available for Projects</div>
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-title">
-          <span class="gradient-text">Sheikh Mohammad</span>
-          <span class="hero-title-suffix">Ahmed</span>
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__text">
+        <p class="hero__kicker">Sheikh Mohammad Ahmed</p>
+        <h1 class="hero__title">
+          I build AI products<br />
+          that make <em>money</em>.
         </h1>
-        <p class="hero-subtitle">Web Developer & AI Builder</p>
-        <p class="hero-description">
-          Co-Founder @ <strong>Aplinode</strong> | Full Stack Developer Intern @ <strong>Nexsoft Solutions</strong>
-          | Former Co-Founder & CEO @ <strong>Markaaf Studio</strong> | Hackathon Winner (1200+ Participants)
+        <p class="hero__lede">
+          Co-founder of <strong>Aplinode</strong>, a Karachi web &amp; AI studio.
+          Full-stack engineer, product operator, two-time hackathon winner.
+          I turn half-formed ideas into shipped software clients actually pay for.
         </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            View My Work <i class="fas fa-arrow-right"></i>
-          </a>
-          <a href="docs/sheikh-mohammad-ahmed-resume-dev.pdf" class="btn btn-outline" download>
-            <i class="fas fa-download"></i> Resume
-          </a>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Start a project</a>
+          <a href="#work" class="link-arrow">See the work <span aria-hidden="true">→</span></a>
         </div>
-        <div class="hero-socials">
-          <a href="https://github.com/sheikh-mohammad" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/sheikh-mohammad-li/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://twitter.com/sheikhmohammadx" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
-            <i class="fab fa-x-twitter"></i>
-          </a>
-          <a href="https://facebook.com/sheikh.mohammad.fb" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="mailto:sheikhmohammadahmed07@gmail.com" class="social-link" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
+        <dl class="hero__facts">
+          <div class="hero__fact">
+            <dt>Currently</dt>
+            <dd>Head of Product, Maintaineo</dd>
+          </div>
+          <div class="hero__fact">
+            <dt>Founding</dt>
+            <dd>Co-founder, Aplinode</dd>
+          </div>
+          <div class="hero__fact">
+            <dt>Proof</dt>
+            <dd>2× hackathon winner · 1,200+ participants</dd>
+          </div>
+        </dl>
       </div>
-      <div class="hero-image-wrapper">
-        <div class="hero-image-glow"></div>
-        <div class="hero-image-frame">
-          <img src="https://avatars.githubusercontent.com/u/173155355?v=4" alt="Sheikh Mohammad Ahmed" class="hero-image" />
-        </div>
-        <div class="hero-status-card">
-          <div class="status-dot"></div>
-          <span>Open to Work</span>
-        </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <div class="mouse"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
 
-  <!-- ===== ABOUT ===== -->
-  <section class="section about" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">About Me</span>
-        <h2 class="section-title">Crafting Digital <span class="gradient-text">Experiences</span></h2>
-        <div class="section-divider"></div>
+      <figure class="hero__portrait">
+        <img
+          src="https://avatars.githubusercontent.com/u/173155355?v=4"
+          alt="Sheikh Mohammad Ahmed"
+          width="480"
+          height="480"
+          fetchpriority="high" />
+        <figcaption>
+          <span>Sheikh Mohammad Ahmed</span>
+          <span>AI Engineer &amp; Founder</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section about" id="about">
+      <div class="about__head">
+        <h2 class="section-title">The short version</h2>
+        <p class="section-lede">
+          I’ve worn the hats you don’t see on a resumé — founder, CTO, lead, engineer —
+          and I keep coming back to one thing: shipping software people pay for.
+        </p>
       </div>
-      <div class="about-grid">
-        <div class="about-image-wrapper fade-in">
-          <div class="about-image-frame">
-            <img src="https://avatars.githubusercontent.com/u/173155355?v=4" alt="Sheikh Mohammad Ahmed" />
-          </div>
-          <div class="about-stats">
-            <div class="stat-item">
-              <span class="stat-number gradient-text">59+</span>
-              <span class="stat-label">Projects</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number gradient-text">3+</span>
-              <span class="stat-label">Companies</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number gradient-text">112</span>
-              <span class="stat-label">Followers</span>
-            </div>
-          </div>
-        </div>
-        <div class="about-content fade-in">
-          <p class="about-text">
-            As <strong>Co-Founder of Aplinode</strong> and former Co-Founder & CEO of Markaaf Studio,
-            I've worked on AI website development, startup execution, team collaboration, and turning
-            ideas into practical solutions. I specialize in <strong>AI Integrations, Web Development,
-            Custom Web Applications, Intelligent Automation, and Backend Development</strong> (Firebase & Supabase).
+      <div class="about__body">
+        <div class="about__story">
+          <p>
+            As co-founder of <strong>Aplinode</strong> and head of product on
+            <strong>Maintaineo</strong>, I run an AI-powered asset-management platform
+            end to end — from the QR on the machine to the maintenance history auditors
+            trust. Before that I co-founded and ran <strong>Markaaf Studio</strong> with a
+            six-person team, led technology as <strong>CTO of Turbo Services</strong>, and
+            built client products across farmhouses, academies, and exporters.
           </p>
-          <p class="about-text">
-            Currently expanding my expertise in <strong>AI Engineering</strong> while building scalable
-            web applications and delivering high-quality solutions for clients. I'm passionate about
-            collaborating with startups, working with businesses, and partnering with organizations
-            building meaningful technology.
+          <p>
+            Today I work where web development meets AI: custom web applications,
+            intelligent automation, and backend systems on Firebase and Supabase. I’m
+            expanding into AI engineering proper — agents, pipelines, and the systems
+            that let a small team do the work of five.
           </p>
-          <div class="about-info-grid">
-            <div class="info-item">
-              <span class="info-icon"><i class="fas fa-map-pin"></i></span>
-              <div>
-                <span class="info-label">Location</span>
-                <span class="info-value">Karachi, Pakistan</span>
-              </div>
-            </div>
-            <div class="info-item">
-              <span class="info-icon"><i class="fas fa-code"></i></span>
-              <div>
-                <span class="info-label">Focus</span>
-                <span class="info-value">Web & AI Development</span>
-              </div>
-            </div>
-            <div class="info-item">
-              <span class="info-icon"><i class="fas fa-graduation-cap"></i></span>
-              <div>
-                <span class="info-label">Education</span>
-                <span class="info-value">SMIT · PIAIC · Panaversity</span>
-              </div>
-            </div>
-            <div class="info-item">
-              <span class="info-icon"><i class="fas fa-robot"></i></span>
-              <div>
-                <span class="info-label">AI Tools</span>
-                <span class="info-value">OpenAI SDK · Claude Code · n8n</span>
-              </div>
-            </div>
-          </div>
         </div>
+        <dl class="about__facts">
+          <div class="about__fact"><dt>Based</dt><dd>Karachi, Pakistan</dd></div>
+          <div class="about__fact"><dt>Focus</dt><dd>Web &amp; AI development</dd></div>
+          <div class="about__fact"><dt>Education</dt><dd>SMIT · PIAIC · Panaversity</dd></div>
+          <div class="about__fact"><dt>AI toolkit</dt><dd>OpenAI SDK · Claude Code · n8n</dd></div>
+          <div class="about__fact"><dt>Volume</dt><dd>59+ projects shipped</dd></div>
+          <div class="about__fact"><dt>Companies</dt><dd>5 across two years</dd></div>
+        </dl>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== SKILLS ===== -->
-  <section class="section skills" id="skills">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Expertise</span>
-        <h2 class="section-title">Tech Stack & <span class="gradient-text">Skills</span></h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="skills-grid">
-        <div class="skill-category fade-in">
-          <div class="skill-category-header">
-            <i class="fas fa-code"></i>
-            <h3>Frontend</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">HTML5</span>
-            <span class="skill-tag">CSS3</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Bootstrap</span>
-            <span class="skill-tag">Tailwind</span>
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Next.js</span>
-            <span class="skill-tag">TypeScript</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-header">
-            <i class="fas fa-server"></i>
-            <h3>Backend & Database</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Firebase</span>
-            <span class="skill-tag">Supabase</span>
-            <span class="skill-tag">PostgreSQL</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-header">
-            <i class="fas fa-brain"></i>
-            <h3>AI & Automation</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">OpenAI SDK</span>
-            <span class="skill-tag">Claude Code</span>
-            <span class="skill-tag">n8n</span>
-            <span class="skill-tag">AI Agents</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-header">
-            <i class="fas fa-palette"></i>
-            <h3>Design & Tools</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Figma</span>
-            <span class="skill-tag">Adobe Tools</span>
-            <span class="skill-tag">Canva</span>
-            <span class="skill-tag">Git</span>
-            <span class="skill-tag">Postman</span>
-            <span class="skill-tag">Notion</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-header">
-            <i class="fas fa-cloud"></i>
-            <h3>DevOps & Cloud</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Vercel</span>
-            <span class="skill-tag">Netlify</span>
-            <span class="skill-tag">Firebase Hosting</span>
-            <span class="skill-tag">Docker</span>
-          </div>
-        </div>
-        <div class="skill-category fade-in">
-          <div class="skill-category-header">
-            <i class="fas fa-bolt"></i>
-            <h3>Core Competencies</h3>
-          </div>
-          <div class="skill-tags">
-            <span class="skill-tag">Technology Management</span>
-            <span class="skill-tag">Start-up Ventures</span>
-            <span class="skill-tag">MVP Development</span>
-            <span class="skill-tag">Team Leadership</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EXPERIENCE ===== -->
-  <section class="section experience" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Career</span>
-        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
-        <div class="section-divider"></div>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Co-Founder</h3>
-                <a href="https://aplinode.com" target="_blank" rel="noopener" class="timeline-company">@ Aplinode</a>
-              </div>
-              <span class="timeline-date">May 2026 — Present</span>
-            </div>
-            <p>Engineering trust, delivering growth. Building a web development & digital solutions agency in Karachi, crafting modern digital experiences that solve business problems.</p>
-            <div class="timeline-tags">
-              <span>Web Development</span>
-              <span>AI Integrations</span>
-              <span>SaaS</span>
-              <span>Team Leadership</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Head of Product</h3>
-                <a href="https://maintaineo.aplinode.com/" target="_blank" rel="noopener" class="timeline-company">@ Maintaineo</a>
-              </div>
-              <span class="timeline-date">2026 — Present</span>
-            </div>
-            <p>Leading product for Maintaineo, Aplinode's AI-powered asset & maintenance management platform. Driving QR-enabled asset tracking, AI triage, and enterprise maintenance workflows.</p>
-            <div class="timeline-tags">
-              <span>Product Management</span>
-              <span>AI</span>
-              <span>Asset Management</span>
-              <span>Enterprise SaaS</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Full Stack Web Developer</h3>
-                <span class="timeline-company">@ Nexsoft Solutions</span>
-              </div>
-              <span class="timeline-date">May 2026 — July 2026</span>
-            </div>
-            <p>Internship building full-stack web applications. Working on responsive landing pages, admin dashboards, real-time chat apps, weather apps, and more.</p>
-            <div class="timeline-tags">
-              <span>Full Stack</span>
-              <span>Python</span>
-              <span>Firebase</span>
-              <span>Responsive Design</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Chief Technology Officer</h3>
-                <span class="timeline-company">@ Turbo Services</span>
-              </div>
-              <span class="timeline-date">Jan 2026 — June 2026</span>
-            </div>
-            <p>Led technology strategy for a software house offering web development, AI, design, and digital marketing. Built the company's digital presence with a modern website and online booking system.</p>
-            <div class="timeline-tags">
-              <span>Next.js</span>
-              <span>CTO</span>
-              <span>Web Strategy</span>
-              <span>Digital Transformation</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Co-Founder & CEO</h3>
-                <span class="timeline-company">@ Markaaf Studio</span>
-              </div>
-              <span class="timeline-date">May 2025 — July 2025</span>
-            </div>
-            <p>Founded a software house delivering web development, mobile apps, graphic design, and data science solutions. Led a team of 6 and built client portfolio from scratch.</p>
-            <div class="timeline-tags">
-              <span>Startup</span>
-              <span>CEO</span>
-              <span>Team Management</span>
-              <span>Client Delivery</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section class="section projects" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Portfolio</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-        <div class="section-divider"></div>
+    <!-- ===== WORK INDEX ===== -->
+    <section class="section work" id="work">
+      <div class="work__head">
+        <h2 class="section-title">Selected work</h2>
+        <p class="section-lede">
+          From a 1,200-person hackathon platform to an AI maintenance system —
+          ten things I’ve built, shipped, and stood behind.
+        </p>
       </div>
 
-      <!-- Filter Tabs -->
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="hackathon">Hackathons</button>
-        <button class="filter-btn" data-filter="company">Companies</button>
-        <button class="filter-btn" data-filter="client">Clients</button>
+      <ol class="work-index">
+        <li class="work-row">
+          <a href="https://maintaineo.aplinode.com/" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">01</span>
+            <span class="work-row__title">Maintaineo</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Product</span>
+              <span class="work-row__note">AI asset &amp; maintenance platform — head of product</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://helplytics-ai-one.vercel.app" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">02</span>
+            <span class="work-row__title">Helplytics AI</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Hackathon</span>
+              <span class="work-row__note">SMIT Grand Coding Night · 1,200+ participants</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://aplinode.com" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">03</span>
+            <span class="work-row__title">Aplinode</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Company</span>
+              <span class="work-row__note">Web &amp; AI studio — co-founder</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://maintain-iq-smit.vercel.app/" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">04</span>
+            <span class="work-row__title">Maintain-IQ</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Hackathon</span>
+              <span class="work-row__note">SMIT maintenance tracker</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://turbo-services-org.web.app/" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">05</span>
+            <span class="work-row__title">Turbo Services</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Company</span>
+              <span class="work-row__note">Software house — led as CTO</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://sairsapata.vercel.app" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">06</span>
+            <span class="work-row__title">Sai Sapata Farm House</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Client</span>
+              <span class="work-row__note">Luxury farmhouse resort booking</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://al-suffahacademy.web.app" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">07</span>
+            <span class="work-row__title">Al Suffah Academy</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Client</span>
+              <span class="work-row__note">Islamic educational institution</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://markaaf-studio-web.web.app" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">08</span>
+            <span class="work-row__title">Markaaf Studio</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Company</span>
+              <span class="work-row__note">My first studio — co-founded</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://roberto-web.netlify.app" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">09</span>
+            <span class="work-row__title">Roberto-Web</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Hackathon</span>
+              <span class="work-row__note">Saylami Coding Night 2025</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li class="work-row">
+          <a href="https://trendzautomotives.vercel.app" target="_blank" rel="noopener">
+            <span class="work-row__idx" aria-hidden="true">10</span>
+            <span class="work-row__title">Trendz Automotives</span>
+            <span class="work-row__meta">
+              <span class="work-row__tag">Client</span>
+              <span class="work-row__note">Heavy equipment exporter</span>
+            </span>
+            <span class="work-row__go" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== CAPABILITIES ===== -->
+    <section class="section capabilities" id="capabilities">
+      <div class="capabilities__text">
+        <h2 class="section-title">What I do</h2>
+        <p class="section-lede">
+          I’m useful at the awkward stage — when the idea is real but nobody has built
+          it yet. Product thinking on the front, engineering on the back.
+        </p>
+        <ul class="capabilities__list">
+          <li><span class="capabilities__num" aria-hidden="true">01</span><h3>Custom web applications</h3><p>Dashboards, portals, and tools built to fit a business, not a template.</p></li>
+          <li><span class="capabilities__num" aria-hidden="true">02</span><h3>AI integrations</h3><p>OpenAI SDK, Claude, and n8n workflows wired into products people actually use.</p></li>
+          <li><span class="capabilities__num" aria-hidden="true">03</span><h3>Intelligent automation</h3><p>Boring, repetitive work handed to agents — with the human in the loop.</p></li>
+          <li><span class="capabilities__num" aria-hidden="true">04</span><h3>Product &amp; startup execution</h3><p>From co-founder runway to MVP: the decisions that make a product shippable.</p></li>
+        </ul>
       </div>
 
-      <div class="projects-grid">
-
-        <!-- Helplytics AI -->
-        <div class="project-card fade-in" data-category="hackathon">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #D4A373, #9D4E4E);">
-              <i class="fas fa-robot"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://helplytics-ai-one.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/sheikh-mohammad/helplytics-ai" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-            <span class="project-badge">Hackathon</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Helplytics AI</h3>
-            <p>Premium community-powered support network built for SMIT Grand Coding Night (1200+ participants). AI auto-categorization, trust scores, leaderboards, and admin analytics.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span><span>Vercel</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Maintain-IQ -->
-        <div class="project-card fade-in" data-category="hackathon">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #C4845D, #6B3030);">
-              <i class="fas fa-tools"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://maintain-iq-smit.vercel.app/" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/sheikh-mohammad/maintain-iq" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-            <span class="project-badge">Hackathon</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Maintain-IQ</h3>
-            <p>Maintenance tracking web application built for a SMIT hackathon. Multi-page layout with asset management and operational intelligence features.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span><span>Vercel</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Roberto-Web -->
-        <div class="project-card fade-in" data-category="hackathon">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #6B3030, #C4845D);">
-              <i class="fas fa-hotel"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://roberto-web.netlify.app" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/sheikh-mohammad/roberto-web" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
-            <span class="project-badge">Hackathon</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Roberto-Web</h3>
-            <p>Luxury hotel/resort website template built for Saylami Coding Night 2025. Fully responsive with Bootstrap 5, image carousel, and booking interface.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>Netlify</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Aplinode -->
-        <div class="project-card fade-in" data-category="company">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #9D4E4E, #D4A373);">
-              <i class="fas fa-building"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://aplinode.com" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-            <span class="project-badge">Company</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Aplinode</h3>
-            <p>Premium web development & digital solutions agency. "Engineering Trust, Delivering Growth." Full-service agency offering web apps, dashboards, automation, and AI solutions.</p>
-            <div class="project-tags">
-              <span>React</span><span>Next.js</span><span>Firebase</span><span>Tailwind</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Maintaineo -->
-        <div class="project-card fade-in" data-category="company">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #6B3030, #C4845D);">
-              <i class="fas fa-qrcode"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://maintaineo.aplinode.com/" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-            <span class="project-badge">Product</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Maintaineo</h3>
-            <p>Aplinode's AI-powered asset & maintenance management platform. QR-enabled asset tracking, AI triage, technician workflows, and a permanent audit-ready maintenance history.</p>
-            <div class="project-tags">
-              <span>AI</span><span>Asset Management</span><span>QR</span><span>SaaS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Turbo Services -->
-        <div class="project-card fade-in" data-category="company">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #C4845D, #E8C4A0);">
-              <i class="fas fa-wrench"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://turbo-services-org.web.app/" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-            <span class="project-badge">Company</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Turbo Services</h3>
-            <p>Software house delivering web development, generative & agentic AI solutions, graphic design, and digital marketing to modern businesses.</p>
-            <div class="project-tags">
-              <span>Web Development</span><span>AI</span><span>Design</span><span>Marketing</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Markaaf Studio -->
-        <div class="project-card fade-in" data-category="company">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #6B3030, #9D4E4E);">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://markaaf-studio-web.web.app" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-            <span class="project-badge">Company</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Markaaf Studio</h3>
-            <p>Software house website — "Innovating the Future." Showcasing web development, mobile apps, graphic design, and data science capabilities with a 6-person team.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span><span>Firebase</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sai Sapata -->
-        <div class="project-card fade-in" data-category="client">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #D4A373, #E8C4A0);">
-              <i class="fas fa-tree"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://sairsapata.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-            <span class="project-badge">Client</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Sai Sapata Farm House</h3>
-            <p>Luxury farmhouse resort booking and marketing site. Features amenities showcase, guest reviews, WhatsApp integration, and direct booking funnel.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span><span>Cloudinary</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Al Suffah Academy -->
-        <div class="project-card fade-in" data-category="client">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #C4845D, #9D4E4E);">
-              <i class="fas fa-school"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://al-suffahacademy.web.app" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-            <span class="project-badge">Client</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Al Suffah Academy</h3>
-            <p>Islamic educational institution website blending modern education with Islamic values. Features courses, admissions, testimonials, and theme toggle.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span><span>Firebase</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Trendz Automotives -->
-        <div class="project-card fade-in" data-category="client">
-          <div class="project-card-image">
-            <div class="project-placeholder" style="background: linear-gradient(135deg, #9D4E4E, #C4845D);">
-              <i class="fas fa-truck"></i>
-            </div>
-            <div class="project-overlay">
-              <a href="https://trendzautomotives.vercel.app" target="_blank" rel="noopener" class="project-link-btn">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
-            <span class="project-badge">Client</span>
-          </div>
-          <div class="project-card-body">
-            <h3>Trendz Automotives</h3>
-            <p>Global heavy equipment exporter business presence website. Professional corporate landing page for international machinery exports.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span><span>Vercel</span>
-            </div>
-          </div>
-        </div>
-
+      <div class="capabilities__tools">
+        <p class="capabilities__tools-label">The toolbox</p>
+        <ul class="toolbox">
+          <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li>
+          <li>React</li><li>Next.js</li><li>Tailwind</li><li>Bootstrap</li>
+          <li>Node.js</li><li>Express</li><li>Python</li><li>MongoDB</li>
+          <li>PostgreSQL</li><li>Firebase</li><li>Supabase</li><li>OpenAI SDK</li>
+          <li>Claude Code</li><li>n8n</li><li>Docker</li><li>Vercel</li>
+          <li>Netlify</li><li>Git</li><li>Figma</li><li>Postman</li>
+        </ul>
+        <p class="capabilities__tools-note">
+          Plus the softer stack: team leadership, MVP scoping, and knowing when to say no.
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== TESTIMONIALS ===== -->
-  <section class="section testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Testimonials</span>
-        <h2 class="section-title">What People <span class="gradient-text">Say</span></h2>
-        <div class="section-divider"></div>
+    <!-- ===== ROLES ===== -->
+    <section class="section roles" id="roles">
+      <div class="roles__head">
+        <h2 class="section-title">Where I’ve worked</h2>
+        <p class="section-lede">Two years, five companies, every hat in between.</p>
       </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-in">
-          <div class="testimonial-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">"Sheikh Mohammad delivered an exceptional website for our academy. His attention to detail and understanding of our needs was remarkable. Highly recommended!"</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AA</div>
-            <div>
-              <p class="testimonial-name">Al Suffah Academy</p>
-              <p class="testimonial-role">Client</p>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in">
-          <div class="testimonial-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">"Working with Sheikh Mohammad at Markaaf Studio was a great experience. His leadership and technical skills drove our projects to successful completion."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MF</div>
-            <div>
-              <p class="testimonial-name">Muhammad Faizan Khan</p>
-              <p class="testimonial-role">Lead Developer, Markaaf Studio</p>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card fade-in">
-          <div class="testimonial-stars">
-            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">"Working alongside Sheikh Mohammad as his co-founder and partner at Aplinode has been a privilege. His technical depth, product vision, and execution are unmatched — he's the driving force behind Maintaineo."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MS</div>
-            <div>
-              <p class="testimonial-name"><a href="https://aplinode.com" target="_blank" rel="noopener">Mustafa Shahzad</a></p>
-              <p class="testimonial-role">Co-Founder, Aplinode</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      <ol class="roles-list">
+        <li class="role-row">
+          <div class="role-row__role">Co-Founder</div>
+          <div class="role-row__company">Aplinode</div>
+          <p class="role-row__note">Engineering trust, delivering growth. Web development &amp; digital solutions agency in Karachi.</p>
+          <div class="role-row__date">May 2026 — present</div>
+        </li>
+        <li class="role-row">
+          <div class="role-row__role">Head of Product</div>
+          <div class="role-row__company">Maintaineo</div>
+          <p class="role-row__note">AI-powered asset &amp; maintenance platform — QR tracking, AI triage, audit-ready history.</p>
+          <div class="role-row__date">2026 — present</div>
+        </li>
+        <li class="role-row">
+          <div class="role-row__role">Full Stack Developer</div>
+          <div class="role-row__company">Nexsoft Solutions</div>
+          <p class="role-row__note">Landing pages, admin dashboards, real-time chat, weather apps — and a lot of fast learning.</p>
+          <div class="role-row__date">May 2026 — Jul 2026</div>
+        </li>
+        <li class="role-row">
+          <div class="role-row__role">Chief Technology Officer</div>
+          <div class="role-row__company">Turbo Services</div>
+          <p class="role-row__note">Technology strategy, a modern website, and an online booking system for the software house.</p>
+          <div class="role-row__date">Jan 2026 — Jun 2026</div>
+        </li>
+        <li class="role-row">
+          <div class="role-row__role">Co-Founder &amp; CEO</div>
+          <div class="role-row__company">Markaaf Studio</div>
+          <p class="role-row__note">Built a six-person studio and a client portfolio from zero in three months.</p>
+          <div class="role-row__date">May 2025 — Jul 2025</div>
+        </li>
+      </ol>
+    </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section class="section contact" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Contact</span>
-        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
-        <div class="section-divider"></div>
+    <!-- ===== PROOF ===== -->
+    <section class="section proof" id="proof">
+      <figure class="proof__main">
+        <blockquote>
+          “Sheikh’s technical depth, product vision, and execution are unmatched — he’s
+          the driving force behind Maintaineo.”
+        </blockquote>
+        <figcaption>Mustafa Shahzad — Co-Founder, Aplinode</figcaption>
+      </figure>
+      <div class="proof__side">
+        <figure>
+          <blockquote>“He delivered an exceptional website for our academy. Attention to detail was remarkable.”</blockquote>
+          <figcaption>Al Suffah Academy — Client</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“His leadership and technical skills drove our projects to successful completion.”</blockquote>
+          <figcaption>Muhammad Faizan Khan — Lead Dev, Markaaf Studio</figcaption>
+        </figure>
       </div>
-      <div class="contact-container">
-        <div class="contact-info fade-in">
-          <h3>Get In Touch</h3>
-          <p>Have a project in mind or just want to chat? I'm always open to discussing new opportunities, collaborations, or ideas.</p>
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-              <div>
-                <span class="contact-label">Email</span>
-                <a href="mailto:sheikhmohammadahmed07@gmail.com">sheikhmohammadahmed07@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-              <div>
-                <span class="contact-label">Location</span>
-                <span>Karachi, Pakistan</span>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-check-circle"></i></div>
-              <div>
-                <span class="contact-label">Status</span>
-                <span class="availability">Available for Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="contact-socials">
-            <a href="https://github.com/sheikh-mohammad" target="_blank" rel="noopener" class="social-link large"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sheikh-mohammad-li/" target="_blank" rel="noopener" class="social-link large"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://twitter.com/sheikhmohammadx" target="_blank" rel="noopener" class="social-link large"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://facebook.com/sheikh.mohammad.fb" target="_blank" rel="noopener" class="social-link large"><i class="fab fa-facebook-f"></i></a>
-          </div>
-        </div>
-        <form class="contact-form fade-in" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="Your Name" required />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" placeholder="your@email.com" required />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" placeholder="What's this about?" />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full">
-            Send Message <i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+      <p class="contact__kicker">Availability</p>
+      <h2 class="contact__title">Let’s build something that pays for itself.</h2>
+      <p class="contact__lede">
+        One project at a time. If you have a product that needs building, an idea worth
+        shipping, or an AI mess worth cleaning up — my inbox is open.
+      </p>
+      <div class="contact__row">
+        <button class="link-arrow link-arrow--big" id="copyEmail">
+          sheikhmohammadahmed07@gmail.com <span aria-hidden="true">⧉</span>
+        </button>
+        <span class="contact__hint" id="copyHint">click to copy</span>
       </div>
-    </div>
-  </section>
+      <div class="contact__channels">
+        <a class="contact__channel" href="https://github.com/sheikh-mohammad" target="_blank" rel="noopener">GitHub</a>
+        <a class="contact__channel" href="https://www.linkedin.com/in/sheikh-mohammad-li/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="contact__channel" href="https://twitter.com/sheikhmohammadx" target="_blank" rel="noopener">X</a>
+        <a class="contact__channel" href="https://facebook.com/sheikh.mohammad.fb" target="_blank" rel="noopener">Facebook</a>
+        <a class="contact__channel" href="https://wa.me/923211234567" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-brand">
-          <span class="logo-text">&lt;SM /&gt;</span>
-          <p>Web Developer & AI Builder — building meaningful technology, one project at a time.</p>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Projects</h4>
-          <ul>
-            <li><a href="https://aplinode.com" target="_blank" rel="noopener">Aplinode</a></li>
-            <li><a href="https://maintaineo.aplinode.com/" target="_blank" rel="noopener">Maintaineo</a></li>
-            <li><a href="https://helplytics-ai-one.vercel.app" target="_blank" rel="noopener">Helplytics AI</a></li>
-            <li><a href="https://turbo-services-org.web.app/" target="_blank" rel="noopener">Turbo Services</a></li>
-            <li><a href="https://markaaf-studio-web.web.app" target="_blank" rel="noopener">Markaaf Studio</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Sheikh Mohammad Ahmed. Built with <i class="fas fa-heart" style="color: #C4845D;"></i> using vanilla everything.</p>
-      </div>
+    <div class="footer__close">
+      <p>— Sheikh Mohammad Ahmed</p>
+      <p>Karachi, Pakistan</p>
+    </div>
+    <div class="footer__meta">
+      <p>© 2026 Sheikh Mohammad Ahmed</p>
+      <p>Designed &amp; built by hand — no templates, no glass, no gradient text.</p>
+      <a href="#top" class="footer__top">Back to top <span aria-hidden="true">↑</span></a>
     </div>
   </footer>
-
-  <!-- ===== BACK TO TOP ===== -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-arrow-up"></i>
-  </button>
 
   <script src="js/main.js"></script>
 </body>
